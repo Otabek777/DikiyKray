@@ -289,6 +289,11 @@ ul, ol {
   color: #25314E;
   padding: 15px 20px;
   position: relative;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.header__navbar .ul .item:hover {
+  color: #9EAB05;
 }
 .header__navbar .ul .item::after {
   content: "";
