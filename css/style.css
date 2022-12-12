@@ -104,6 +104,9 @@ ul, ol {
   right: 112px;
   z-index: 2;
 }
+.main__left .logo img {
+  width: 100%;
+}
 
 .main__left::after {
   content: "";
@@ -129,6 +132,9 @@ ul, ol {
   right: auto;
   margin: 0 auto;
   margin-bottom: 42px;
+}
+.main__bottom .logo img {
+  width: 100%;
 }
 .main__bottom .soc {
   display: -webkit-box;
