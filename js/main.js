@@ -5,6 +5,19 @@ $(window).scroll(function(){
         $(".header").removeClass("fixed");
     }
 });
+$(function(){
+    $('.header__navbar .item').click(function(){
+        $(".header__navbar").removeClass("opacity");
+        $(".header .burgir").removeClass("rotate");
+        setTimeout(function() {
+            $(".header__navbar").removeClass("open");
+            $(".header .burgir").removeClass("active");
+        },400);
+         var target = $(this).attr('href');
+         $('html, body').animate({scrollTop: $(target).offset().top}, 800);
+         return false; 
+    }); 
+});
 
 $(".header .burgir").click(function() {
     if($(".header .burgir").hasClass("active")) {

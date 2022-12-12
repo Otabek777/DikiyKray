@@ -222,7 +222,7 @@ ul, ol {
   top: 0;
   left: 0;
   padding-left: 40px;
-  z-index: 2;
+  z-index: 9;
 }
 .header .container {
   position: relative;
