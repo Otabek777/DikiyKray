@@ -198,10 +198,22 @@ ul, ol {
           box-shadow: 0px 4px 55px rgba(41, 44, 51, 0.3);
   margin-left: auto;
 }
+.main__right .snowflake {
+  position: absolute;
+  top: 260px;
+  right: 140px;
+}
+.main__right .snowflake2 {
+  position: absolute;
+  bottom: 320px;
+  left: 30px;
+}
 
 .main__content {
   padding-left: 80px;
   padding-top: 150px;
+  position: relative;
+  z-index: 2;
 }
 
 .header {
@@ -210,6 +222,7 @@ ul, ol {
   top: 0;
   left: 0;
   padding-left: 40px;
+  z-index: 2;
 }
 .header .container {
   position: relative;
@@ -550,6 +563,8 @@ ul, ol {
 .footer {
   padding-left: 80px;
   padding-bottom: 70px;
+  position: relative;
+  z-index: 2;
 }
 
 .footer__box {
