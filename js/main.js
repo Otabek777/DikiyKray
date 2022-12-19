@@ -19,6 +19,25 @@ $(function(){
     }); 
 });
 
+// Search
+$(".search_open").click(function() {
+    $(this).addClass("none");
+    $(".header__call").addClass("opacity");
+    $(".header__search").addClass("active");
+    setTimeout(function() {
+        $(".header__search").addClass("opacity");
+    },10);
+});
+$(".header__search .close").click(function() {
+    $(".search_open").removeClass("none");
+    $(".header__call").removeClass("opacity");
+    $(".header__search").removeClass("opacity");
+    setTimeout(function() {
+        $(".header__search").removeClass("active");
+        
+    },300);
+});
+
 $(".header .burgir").click(function() {
     if($(".header .burgir").hasClass("active")) {
         $(".header__navbar").removeClass("opacity");
