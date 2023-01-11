@@ -183,6 +183,17 @@ ul, ol {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   padding: 9px 9px 0 30px;
+  position: relative;
+}
+.page_start__block .block_left .img_bottom, .page_start__block .block_right .img_bottom {
+  position: absolute;
+  bottom: 0;
+  right: -20px;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .page_start__block .block_left .text, .page_start__block .block_right .text {
   font-weight: 400;
@@ -227,6 +238,9 @@ ul, ol {
 .page_start__block .block_left .img img:nth-child(2), .page_start__block .block_right .img img:nth-child(2) {
   opacity: 0;
 }
+.page_start__block .block_left .img_bottom {
+  bottom: -150px;
+}
 .page_start__block .block_left .box {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -248,6 +262,9 @@ ul, ol {
 }
 .page_start__block .block_right {
   padding: 9px 30px 0 9px;
+}
+.page_start__block .block_right .img_bottom {
+  bottom: -180px;
 }
 .page_start__block .block_right .img {
   margin-right: 22px;
@@ -282,8 +299,8 @@ ul, ol {
   top: 0;
   left: 0;
   opacity: 0;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
 }
 
 .page_start.start .blockStart {
@@ -310,6 +327,13 @@ ul, ol {
 }
 .page_start.left .page_start__block .block_left {
   background: #FFFFFF;
+}
+.page_start.left .page_start__block .block_left .img_bottom {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
 }
 .page_start.left .page_start__block .block_left .start_btn {
   -webkit-box-pack: justify;
@@ -344,6 +368,13 @@ ul, ol {
 }
 .page_start.right .page_start__block .block_right {
   background: #FFFFFF;
+}
+.page_start.right .page_start__block .block_right .img_bottom {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
 }
 .page_start.right .page_start__block .block_right .start_btn {
   -webkit-box-pack: justify;
