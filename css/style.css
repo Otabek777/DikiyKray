@@ -769,6 +769,23 @@ ul, ol {
   display: flex;
   margin-bottom: 10px;
 }
+.crumbs .li {
+  margin-right: 12px;
+}
+.crumbs .li:last-child {
+  margin-right: 0;
+}
+.crumbs p {
+  display: block;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  color: #616A7E;
+  padding: 3px 7px;
+  background: #E3E4E9;
+  border-radius: 6px;
+  opacity: 0.8;
+}
 .crumbs a {
   display: block;
   font-weight: 300;
@@ -778,6 +795,8 @@ ul, ol {
   padding: 3px 7px;
   background: #E3E4E9;
   border-radius: 6px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .crumbs a:hover {
   background: #9EAB05;
@@ -1119,7 +1138,7 @@ ul, ol {
   left: 30px;
   right: 15px;
   bottom: 30px;
-  padding-right: 40px;
+  padding-right: 57px;
 }
 .stock_slider__block .content .title {
   display: inline;
@@ -1127,9 +1146,9 @@ ul, ol {
   font-size: 22px;
   line-height: 28px;
   color: #FFFFFF;
+  background: #142142;
 }
 .stock_slider__block .content .title span {
-  background: #142142;
   padding: 2px 9px;
 }
 .stock_slider__block .content .title .end {
@@ -2048,7 +2067,6 @@ ul, ol {
   line-height: 20px;
 }
 .question_answer__form .btn {
-  white-space: nowrap;
   padding: 9px 20px 11px 20px;
   border: 1px solid rgba(20, 33, 66, 0.07);
   border-radius: 8px;
@@ -2609,10 +2627,18 @@ ul, ol {
     left: 630px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1399px) {
+  .container {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+  }
   .search_open {
     left: auto;
     right: 120px;
+  }
+  .header .container {
+    position: relative;
   }
   .header__search {
     width: calc(100% - 10px);
@@ -2736,9 +2762,11 @@ ul, ol {
     height: 0;
     opacity: 1;
     border-radius: 0;
+    position: fixed;
   }
   .header__navbar.opacity {
-    height: calc(100vh - 68px);
+    height: calc(100vh - 85px);
+    overflow-y: auto;
   }
   .header__navbar .header__soc, .header__navbar .header__call {
     display: -webkit-box;
@@ -2755,6 +2783,7 @@ ul, ol {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 16px;
   }
   .header__box {
     padding: 15px 0;
