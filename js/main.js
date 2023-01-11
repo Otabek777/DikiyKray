@@ -1,3 +1,27 @@
+if(document.querySelector(".page_start")) {
+    $(".pageStart-left").click(function() {
+        if($(".page_start").hasClass("left")) {
+            $(".page_start").removeClass("left");
+            $(".page_start").removeClass("right");
+            $(".page_start").addClass("start");
+        } else {
+            $(".page_start").removeClass("start");
+            $(".page_start").removeClass("right");
+            $(".page_start").addClass("left");
+        }
+    });
+    $(".pageStart-right").click(function() {
+        if($(".page_start").hasClass("right")) {
+            $(".page_start").removeClass("left");
+            $(".page_start").removeClass("right");
+            $(".page_start").addClass("start");
+        } else {
+            $(".page_start").removeClass("start");
+            $(".page_start").removeClass("left");
+            $(".page_start").addClass("right");
+        }
+    });
+};
 $(window).scroll(function(){
     if ( $(this).scrollTop() > 1) {
         $(".header").addClass("fixed");
@@ -18,6 +42,7 @@ $(function(){
          return false; 
     }); 
 });
+
 
 // Search
 $(".search_open").click(function() {
