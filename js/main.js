@@ -1,22 +1,22 @@
 if(document.querySelector(".page_start")) {
-    $(".pageStart-left").mouseover(function() {
+    $(".page_start .block_left").mouseover(function() {
         $(".page_start").removeClass("start");
         $(".page_start").removeClass("right");
         $(".page_start").addClass("left");
     });
-    $(".pageStart-right").mouseover(function() {
+    $(".page_start .block_right").mouseover(function() {
         $(".page_start").removeClass("start");
         $(".page_start").removeClass("left");
         $(".page_start").addClass("right");
     });
-    $(".page_start").mouseout(function() {
+    $(".page_start .block_left").mouseout(function() {
         $(".page_start").removeClass("left");
         $(".page_start").removeClass("right");
         $(".page_start").addClass("start");
     });
-    $(".page_start").mouseout(function() {
-        $(".page_start").removeClass("left");
+    $(".page_start .block_right").mouseout(function() {
         $(".page_start").removeClass("right");
+        $(".page_start").removeClass("left");
         $(".page_start").addClass("start");
     });
 };
