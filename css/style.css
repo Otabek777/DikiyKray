@@ -65,6 +65,7 @@ ul, ol {
   z-index: 8;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+  opacity: 0;
 }
 .page_start .cloud1 {
   left: 0;
@@ -307,12 +308,15 @@ ul, ol {
   opacity: 1;
 }
 .page_start.start .cloud1 {
+  opacity: 1;
   bottom: 0;
 }
 .page_start.start .cloud2 {
+  opacity: 1;
   bottom: 28px;
 }
 .page_start.start .cloud3 {
+  opacity: 1;
   top: 0;
 }
 
@@ -320,9 +324,11 @@ ul, ol {
   opacity: 1;
 }
 .page_start.left .cloud4 {
+  opacity: 1;
   bottom: 0;
 }
 .page_start.left .cloud5 {
+  opacity: 1;
   bottom: 0;
 }
 .page_start.left .page_start__block .block_left {
@@ -361,9 +367,11 @@ ul, ol {
   opacity: 1;
 }
 .page_start.right .cloud6 {
+  opacity: 1;
   bottom: 0;
 }
 .page_start.right .cloud7 {
+  opacity: 1;
   top: 0;
 }
 .page_start.right .page_start__block .block_right {

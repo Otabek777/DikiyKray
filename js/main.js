@@ -1,25 +1,23 @@
 if(document.querySelector(".page_start")) {
-    $(".pageStart-left").click(function() {
-        if($(".page_start").hasClass("left")) {
-            $(".page_start").removeClass("left");
-            $(".page_start").removeClass("right");
-            $(".page_start").addClass("start");
-        } else {
-            $(".page_start").removeClass("start");
-            $(".page_start").removeClass("right");
-            $(".page_start").addClass("left");
-        }
+    $(".pageStart-left").mouseover(function() {
+        $(".page_start").removeClass("start");
+        $(".page_start").removeClass("right");
+        $(".page_start").addClass("left");
     });
-    $(".pageStart-right").click(function() {
-        if($(".page_start").hasClass("right")) {
-            $(".page_start").removeClass("left");
-            $(".page_start").removeClass("right");
-            $(".page_start").addClass("start");
-        } else {
-            $(".page_start").removeClass("start");
-            $(".page_start").removeClass("left");
-            $(".page_start").addClass("right");
-        }
+    $(".pageStart-right").mouseover(function() {
+        $(".page_start").removeClass("start");
+        $(".page_start").removeClass("left");
+        $(".page_start").addClass("right");
+    });
+    $(".page_start").mouseout(function() {
+        $(".page_start").removeClass("left");
+        $(".page_start").removeClass("right");
+        $(".page_start").addClass("start");
+    });
+    $(".page_start").mouseout(function() {
+        $(".page_start").removeClass("left");
+        $(".page_start").removeClass("right");
+        $(".page_start").addClass("start");
     });
 };
 $(window).scroll(function(){
