@@ -130,9 +130,7 @@ ul, ol {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding-top: 260px;
 }
 .page_start__block .title {
   font-weight: 900;
@@ -308,15 +306,15 @@ ul, ol {
   opacity: 1;
 }
 .page_start.start .cloud1 {
-  opacity: 1;
+  opacity: 0.89;
   bottom: 0;
 }
 .page_start.start .cloud2 {
-  opacity: 1;
+  opacity: 0.89;
   bottom: 28px;
 }
 .page_start.start .cloud3 {
-  opacity: 1;
+  opacity: 0.89;
   top: 0;
 }
 
@@ -324,11 +322,11 @@ ul, ol {
   opacity: 1;
 }
 .page_start.left .cloud4 {
-  opacity: 1;
+  opacity: 0.89;
   bottom: 0;
 }
 .page_start.left .cloud5 {
-  opacity: 1;
+  opacity: 0.89;
   bottom: 0;
 }
 .page_start.left .page_start__block .block_left {
@@ -367,11 +365,11 @@ ul, ol {
   opacity: 1;
 }
 .page_start.right .cloud6 {
-  opacity: 1;
+  opacity: 0.89;
   bottom: 0;
 }
 .page_start.right .cloud7 {
-  opacity: 1;
+  opacity: 0.89;
   top: 0;
 }
 .page_start.right .page_start__block .block_right {

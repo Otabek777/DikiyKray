@@ -37,8 +37,8 @@ $(function(){
         },400);
          var target = $(this).attr('href');
          $('html, body').animate({scrollTop: $(target).offset().top}, 800);
-         return false; 
-    }); 
+         return false;
+    });
 });
 
 
