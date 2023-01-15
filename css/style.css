@@ -2988,6 +2988,30 @@ ul, ol {
   color: #C1C6E2;
 }
 
+.stock_page {
+  border: 0;
+}
+.stock_page .stock_wrap {
+  width: 100%;
+}
+.stock_page .stock_slider__block {
+  margin: 0;
+}
+.stock_page .stock_slider__wrap {
+  margin-bottom: 20px;
+}
+
+.stock_page__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 @media screen and (max-width: 1600px) {
   .main__left {
     width: 630px;
@@ -3000,6 +3024,16 @@ ul, ol {
   }
 }
 @media screen and (max-width: 1430px) {
+  .stock_page .stock_slider__wrap {
+    width: 100%;
+  }
+  .stock_page .stock_slider__block {
+    width: 100%;
+  }
+  .stock_page .stock_slider__block .img img {
+    width: 100%;
+    height: auto;
+  }
   .news_slider__block {
     width: 220px;
   }
