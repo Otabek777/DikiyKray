@@ -3027,7 +3027,7 @@ ul, ol {
     left: 630px;
   }
 }
-@media screen and (max-width: 1430px) {
+@media screen and (max-width: 1460px) {
   .stock_page .stock_slider__wrap {
     width: 100%;
   }
