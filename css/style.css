@@ -3050,7 +3050,15 @@ ul, ol {
 }
 @media screen and (max-width: 1480px) {
   .page_start__block {
-    padding-top: 100px;
+    padding-top: 50px;
+  }
+  .page_start__block .title {
+    font-size: 72px;
+    line-height: 74px;
+  }
+  .page_start__block .title_2 {
+    font-size: 42px;
+    line-height: 44px;
   }
 }
 @media screen and (max-width: 1450px) {
