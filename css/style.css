@@ -3048,6 +3048,11 @@ ul, ol {
     width: 280px;
   }
 }
+@media screen and (max-width: 1480px) {
+  .page_start__block {
+    padding-top: 100px;
+  }
+}
 @media screen and (max-width: 1450px) {
   .page_start__block {
     padding-top: 100px;
