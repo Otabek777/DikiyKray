@@ -130,7 +130,7 @@ ul, ol {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 160px;
+  padding-top: 200px;
 }
 .page_start__block .title {
   font-weight: 900;
@@ -3059,6 +3059,12 @@ ul, ol {
   .page_start__block .title_2 {
     font-size: 42px;
     line-height: 44px;
+  }
+  .page_start__block .block_left .img_bottom {
+    bottom: -70px;
+  }
+  .page_start__block .block_right .img_bottom {
+    bottom: -90px;
   }
 }
 @media screen and (max-width: 1450px) {
