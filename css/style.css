@@ -1591,7 +1591,10 @@ ul, ol {
 
 .news_slider__block {
   width: 236px;
+  min-height: 358px;
   margin-right: 16px;
+  padding-bottom: 28px;
+  position: relative;
 }
 .news_slider__block .img {
   width: 100%;
@@ -1637,6 +1640,9 @@ ul, ol {
   padding: 2px 9px;
   border: 1px solid #9EAB05;
   border-radius: 6px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .news_slider__block:hover .img img {
