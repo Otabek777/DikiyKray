@@ -64,8 +64,10 @@ ul, ol {
   position: absolute;
   opacity: 0;
   z-index: 8;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
 }
 .page_start .cloud1 {
   bottom: 0;
@@ -342,11 +344,14 @@ ul, ol {
 .page_start.start .blockStart {
   opacity: 1;
 }
-.page_start.start .cloud1 {
+.page_start.start .cloud1, .page_start.start .cloud2 {
   opacity: 1;
+  -webkit-transform: translate(0);
+          transform: translate(0);
 }
 .page_start.start .cloud2 {
-  opacity: 1;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
 
 .page_start.left .blockLeft {
@@ -354,6 +359,8 @@ ul, ol {
 }
 .page_start.left .cloud3, .page_start.left .cloud4, .page_start.left .cloud5, .page_start.left .cloud6, .page_start.left .cloud7, .page_start.left .cloud8 {
   opacity: 1;
+  -webkit-transform: translate(0);
+          transform: translate(0);
 }
 .page_start.left .page_start__block .block_left {
   background: #FFFFFF;
@@ -392,6 +399,12 @@ ul, ol {
 }
 .page_start.right .cloud9, .page_start.right .cloud10, .page_start.right .cloud11, .page_start.right .cloud12, .page_start.right .cloud13, .page_start.right .cloud14, .page_start.right .cloud15 {
   opacity: 1;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+.page_start.right .cloud13 {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
 }
 .page_start.right .page_start__block .block_right {
   background: #FFFFFF;

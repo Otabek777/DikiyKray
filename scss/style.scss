@@ -59,7 +59,8 @@ ul, ol {
         position: absolute;
         opacity: 0;
         z-index: 8;
-        transition: all .3s ease;
+        transition: all .8s ease;
+        transform: translateY(50px);
     }
     .cloud1 {
         bottom: 0;
@@ -295,11 +296,12 @@ ul, ol {
     .blockStart {
         opacity: 1;
     }
-    .cloud1 {
+    .cloud1, .cloud2 {
         opacity: 1;
+        transform: translate(0);
     }
     .cloud2 {
-        opacity: 1;
+        transition-delay: .4s;
     }
 }
 .page_start.left {
@@ -308,6 +310,7 @@ ul, ol {
     }
     .cloud3, .cloud4, .cloud5, .cloud6, .cloud7, .cloud8 {
         opacity: 1;
+        transform: translate(0);
     }
     .page_start__block {
         .block_left {
@@ -349,6 +352,10 @@ ul, ol {
     }
     .cloud9, .cloud10, .cloud11, .cloud12, .cloud13, .cloud14, .cloud15 {
         opacity: 1;
+        transform: translate(0);
+    }
+    .cloud13 {
+        transition-delay: .3s;
     }
     .page_start__block {
         .block_right {
